@@ -1,0 +1,6 @@
+{
+  "name": "AppReview AI Analyzer",
+  "description": "AI-powered dashboard for analyzing Google Play app reviews including sentiment analysis, user intent, and pros/cons extraction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

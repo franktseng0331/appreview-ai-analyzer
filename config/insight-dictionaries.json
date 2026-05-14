@@ -1,0 +1,207 @@
+{
+  "useCaseRules": [
+    {
+      "label": "Content Discovery",
+      "categories": ["social", "general"],
+      "patterns": ["content discovery", "content browsing", "social content browsing", "\\bdiscover\\b", "\\bfeed\\b"]
+    },
+    {
+      "label": "Social Interaction",
+      "categories": ["social", "general"],
+      "patterns": ["social networking", "social interaction", "community", "social media browsing"]
+    },
+    {
+      "label": "Lifestyle Inspiration",
+      "categories": ["social", "general"],
+      "patterns": ["lifestyle inspiration", "ideas and trends", "inspiration"]
+    },
+    {
+      "label": "Account Onboarding",
+      "categories": ["social", "general"],
+      "patterns": ["account registration", "registration", "verification", "account recovery", "\\blogin\\b"]
+    },
+    {
+      "label": "Knowledge Capture",
+      "categories": ["productivity", "utility", "general"],
+      "patterns": [
+        "meeting note capture",
+        "meeting transcription",
+        "meeting note",
+        "\\bzoom\\b",
+        "\\bteams\\b",
+        "\\bmeet\\b",
+        "voice-to-text",
+        "voice to text",
+        "audio transcription",
+        "\\btranscription\\b",
+        "\\blecture\\b",
+        "study notes",
+        "\\bschool\\b",
+        "\\bclass\\b",
+        "\\beducation\\b",
+        "note taking",
+        "\\bnotes\\b"
+      ]
+    },
+    {
+      "label": "Translation & Localization",
+      "categories": ["productivity", "utility", "general"],
+      "patterns": ["translation support", "language translation", "multilingual caption", "\\btranslation\\b"]
+    },
+    {
+      "label": "AI Creation & Automation",
+      "categories": ["productivity", "utility", "general"],
+      "patterns": [
+        "content creation",
+        "\\bautomation\\b",
+        "workflow automation",
+        "\\bagent\\b",
+        "\\bdeveloper\\b",
+        "\\bcoding\\b",
+        "code generation",
+        "\\bwebsite\\b",
+        "build app",
+        "app building",
+        "image generation",
+        "creative workflow"
+      ]
+    },
+    {
+      "label": "Professional Productivity",
+      "categories": ["productivity", "general"],
+      "patterns": ["daily productivity", "\\bproductivity\\b", "\\bwork\\b", "journalism", "research", "task management", "\\boffice\\b"]
+    },
+    {
+      "label": "Travel Booking",
+      "categories": ["general"],
+      "patterns": ["travel booking", "book flights", "book hotel", "flight booking", "hotel booking", "\\bbooking\\b", "\\btrip\\b", "\\bflight\\b", "\\bhotel\\b", "\\btravel\\b"]
+    },
+    {
+      "label": "Trip Management",
+      "categories": ["general"],
+      "patterns": ["itinerary management", "manage trip", "booking management", "trip management", "reservation management", "change booking", "cancel booking"]
+    },
+    {
+      "label": "Travel Support",
+      "categories": ["general"],
+      "patterns": ["customer support for booking", "refund support", "booking support", "travel customer service", "refund for ticket", "flight change support"]
+    }
+  ],
+  "painHierarchyRules": [
+    {
+      "category": "Network Performance",
+      "patterns": ["slow internet", "network speed", "line slow", "poor network", "network quality", "hotspot", "disconnect", "coverage", "speed far below", "night.*worse"],
+      "subIssueExamples": ["Slow Mobile Data Speed", "Poor Hotspot Performance", "Frequent Disconnections", "Poor Rural Coverage"]
+    },
+    {
+      "category": "Billing & Charges",
+      "patterns": ["billing", "charged", "bill", "top-up", "top up", "deduct", "money", "price", "pricing", "subscription", "unexpected charge", "balance disappears", "reward not activated"],
+      "subIssueExamples": ["Unexpected Charges", "Top-up Balance Loss", "Purchase Not Activated", "Price Perceived As Too High"]
+    },
+    {
+      "category": "App Reliability",
+      "patterns": ["crash", "loading", "blank", "white screen", "lag", "bug", "stability", "performance", "fails to load"],
+      "subIssueExamples": ["App Stuck On Loading", "White Screen On Launch", "Laggy App Performance", "Crash During Activation"]
+    },
+    {
+      "category": "Account & Activation",
+      "patterns": ["login", "sign in", "authentication", "account", "verification", "passport", "activation", "sim activation", "cannot verify"],
+      "subIssueExamples": ["Passport Verification Failure", "SIM Activation Failure", "Login / Access Failure", "Account Restriction"]
+    },
+    {
+      "category": "UX Friction",
+      "patterns": ["ui", "ux", "interface", "design", "logo", "multiple accounts", "view multiple accounts", "purchase flow blocked"],
+      "subIssueExamples": ["Outdated Interface Elements", "Poor Multi-account UX", "Blocked Purchase Flow"]
+    },
+    {
+      "category": "Support & Resolution",
+      "patterns": ["support", "ticket", "customer service", "no response", "closed without resolution", "appeal"],
+      "subIssueExamples": ["No Human Support", "Tickets Closed Without Resolution", "Unresponsive Customer Service"]
+    }
+  ],
+  "painGainRules": {
+    "social": [
+      {
+        "painLabels": ["Authentication", "Verification", "Login", "Account Management"],
+        "gain": "Offer low-friction sign-up and internationally friendly verification to reduce onboarding drop-off.",
+        "icon": "Shield"
+      },
+      {
+        "painLabels": ["UI/UX", "Usability"],
+        "gain": "Make first-session navigation simpler and more transparent so new users can reach core content faster.",
+        "icon": "Zap"
+      },
+      {
+        "painLabels": ["Performance", "Stability"],
+        "gain": "Promote smoother browsing, playback, and posting as a reliability differentiator for everyday social use.",
+        "icon": "Zap"
+      },
+      {
+        "painLabels": ["Privacy Concerns", "Account Suspension", "Content Moderation"],
+        "gain": "Use clearer trust, moderation, and privacy controls to position the product as safer and more predictable.",
+        "icon": "Shield"
+      }
+    ],
+    "productivity": [
+      {
+        "painLabels": ["Transcript Quality", "Transcription Accuracy", "Translation Accuracy"],
+        "gain": "Compete on accurate, low-edit output so users can trust transcripts without heavy manual cleanup.",
+        "icon": "Shield"
+      },
+      {
+        "painLabels": ["Pricing", "Billing", "Subscription"],
+        "gain": "Lower adoption risk with clearer pricing, flexible plans, and better access to previously generated outputs.",
+        "icon": "Download"
+      },
+      {
+        "painLabels": ["Credit System", "Aggressive Paywall", "Free Trial"],
+        "gain": "Offer fairer usage allowances, clearer credit policies, and a lower-friction trial so users can validate value before committing.",
+        "icon": "Download"
+      },
+      {
+        "painLabels": ["Performance", "Stability"],
+        "gain": "Position faster processing and stable long-session recording as core workflow reliability promises.",
+        "icon": "Zap"
+      },
+      {
+        "painLabels": ["UI/UX", "Functionality"],
+        "gain": "Reduce workflow friction so users can move from recording to output with fewer steps and less confusion.",
+        "icon": "MousePointer2"
+      },
+      {
+        "painLabels": ["Support", "Account Access", "Authentication"],
+        "gain": "Differentiate on accountable support, transparent access controls, and faster issue resolution for business-critical workflows.",
+        "icon": "Shield"
+      }
+    ],
+    "utility": [
+      {
+        "painLabels": ["Performance", "Stability", "Functionality"],
+        "gain": "Emphasize dependable core utility flows with fewer crashes, faster response, and simpler execution.",
+        "icon": "Zap"
+      }
+    ],
+    "general": [
+      {
+        "painLabels": ["Pricing", "Billing", "Subscription"],
+        "gain": "Offer clearer value framing and lower-risk pricing entry points to reduce purchase hesitation.",
+        "icon": "Download"
+      },
+      {
+        "painLabels": ["Credit System", "Aggressive Paywall", "Free Trial"],
+        "gain": "Reduce adoption friction with a simpler trial, clearer credit logic, and more confidence-building access before payment.",
+        "icon": "Download"
+      },
+      {
+        "painLabels": ["Performance", "Stability", "UI/UX", "Usability"],
+        "gain": "Turn recurring friction into a product promise around speed, clarity, and reliability.",
+        "icon": "Zap"
+      },
+      {
+        "painLabels": ["Support", "Account Access", "Authentication"],
+        "gain": "Use responsive support and transparent access recovery as trust-building differentiators.",
+        "icon": "Shield"
+      }
+    ]
+  }
+}
